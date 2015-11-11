@@ -1,6 +1,15 @@
 # cassandra4twitter
 Simple implementation for Tweeting with Cassandra
 
+### Requirements
+
+```java 1.8```
+
+### How to Run
+
+ - cd to ```target```
+ - java -jar cassandra-twitter-1.0-SNAPSHOT.jar
+
 ### Commands available
 
  - SIGNUP <username>
