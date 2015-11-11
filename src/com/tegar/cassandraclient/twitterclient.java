@@ -25,6 +25,13 @@ public class twitterclient {
         }
         session = cluster.connect();
     }
+
+    public void registerUser(String username, String password) {
+        String query = "INSERT INTO " + TABLE_USERS + " (username, password) " +
+                "VALUES ('" + username + "', '" + password + "');";
+        session.execute(query);
+    }
+
     
     public void initSchema(String keyspace, String replicationStrategy, String replicationFactor) {
         // Create keyspace
