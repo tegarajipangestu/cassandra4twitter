@@ -12,14 +12,14 @@ Simple implementation for Tweeting with Cassandra
 
 ### Commands available
 
- - SIGNUP <username>
+ - ```SIGNUP <username>```
 	 - To register new user
- - FOLLOW <usernamefollower> <usernametofollow>
+ - ```FOLLOW <usernamefollower> <usernametofollow>```
 	 - To follow another user
- - TWEET <username> <tweet>
+ - ```TWEET <username> <tweet>```
 	 - To tweet something
- - USERLINE <username>
+ - ```USERLINE <username>```
 	 - Show ```username``` timeline
- - TIMELINE <username>
+ - ```TIMELINE <username>```
 	 - Show global timeline
- - EXIT
+ - ```EXIT```
