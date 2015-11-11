@@ -8,7 +8,7 @@ Simple implementation for Tweeting with Cassandra
 ### How to Run
 
  - cd to ```target```
- - java -jar cassandra-twitter-1.0-SNAPSHOT.jar
+ - ```java -jar cassandra-twitter-1.0-SNAPSHOT.jar```
 
 ### Commands available
 
