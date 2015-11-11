@@ -159,8 +159,8 @@ public class TwitterClient {
         System.out.println("Type any command below\n\n");        
         System.out.println("SIGNUP <username>");
         System.out.println("FOLLOW <follower_username> <followed_username>");
-        System.out.println("ADDTWEET <username> <tweet>");
-        System.out.println("VIEWTWEET <username>");
+        System.out.println("TWEET <username> <tweet>");
+        System.out.println("USERLINE <username>");
         System.out.println("TIMELINE <username>");
         System.out.println("EXIT\n\n");
 
@@ -196,10 +196,10 @@ public class TwitterClient {
                 } else if (command.equalsIgnoreCase("FOLLOW") && parameters.length == 2) {
                     twitterClient.followUser(parameters[0], parameters[1]);
                     System.out.println("* " + parameters[0] + " is now following " + parameters[1]);
-                } else if (command.equalsIgnoreCase("ADDTWEET") && parameters.length>=2) {
+                } else if (command.equalsIgnoreCase("TWEET") && parameters.length>=2) {
                     twitterClient.tweeting(parameters[0], unsplittedParams.substring(parameters[0].length()));
                     System.out.println("* " + parameters[0] + " tweet has been added");
-                } else if (command.equalsIgnoreCase("VIEWTWEET") && parameters.length==1) {
+                } else if (command.equalsIgnoreCase("USERLINE") && parameters.length==1) {
                     ResultSet results = twitterClient.getUserline(parameters[0]);
                     printTweet(results);
                 } else if (command.equalsIgnoreCase("TIMELINE") && parameters.length==1) {
