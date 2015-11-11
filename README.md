@@ -23,3 +23,7 @@ Simple implementation for Tweeting with Cassandra
  - ```TIMELINE <username>```
 	 - Show global timeline
  - ```EXIT```
+
+
+Fauzan Hilmi Ramadhian (13512003)
+Tegar Aji Pangestu (13512061)
